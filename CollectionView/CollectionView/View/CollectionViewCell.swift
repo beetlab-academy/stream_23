@@ -13,9 +13,17 @@ struct CollectionViewCellViewModel {
     let backgroundColor: UIColor
 }
 
+class RoundView: UIView {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        print("RoundView - \(frame)")
+        layer.cornerRadius = frame.size.height / 2
+    }
+}
+
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var containerView: UIView!
+    @IBOutlet private weak var containerView: RoundView!
     
     var viewModel: CollectionViewCellViewModel? {
         didSet {
@@ -27,7 +35,8 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        containerView.layer.cornerRadius = containerView.frame.height / 2
+        super.layoutSubviews()
+        print("collection view cell = \(containerView.frame)")
     }
 
 }
