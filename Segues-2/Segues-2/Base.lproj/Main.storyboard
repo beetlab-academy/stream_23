@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rCc-9t-kwb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Меню-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segues_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gVz-ar-bVE">
+                                <rect key="frame" x="29.5" y="421" width="355" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhP-jX-3dS">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Профиль"/>
+                                        <connections>
+                                            <segue destination="Zhj-Gz-RUr" kind="show" id="kLX-iO-jSv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzr-rM-7bq">
+                                        <rect key="frame" x="0.0" y="56" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Настройки"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bci-RR-YRo">
+                                        <rect key="frame" x="0.0" y="112" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Пожаловаться на идиотов"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gVz-ar-bVE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="49I-jX-xeI"/>
+                            <constraint firstItem="gVz-ar-bVE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="NVf-FW-Kpp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Меню" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="Nf9-1p-x8W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="139"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="vwO-33-8AG">
+            <objects>
+                <viewController id="Zhj-Gz-RUr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8zt-rA-0tE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fh6-K8-r8a"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Профиль" id="OP8-xD-dHD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neX-oS-Yuw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HGV-Ha-buE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rCc-9t-kwb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JZa-CG-roS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gc3-bX-vNm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gr3-mh-NEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="139"/>
+        </scene>
+        <!--Меню-->
+        <scene sceneID="K2n-NT-IfB">
+            <objects>
+                <viewController id="uNf-0h-ZuJ" customClass="ViewController" customModule="Segues_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOj-CN-Gpp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aiR-yX-pMx">
+                                <rect key="frame" x="29.5" y="373" width="355" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-72-Ddn">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Профиль"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sin-4e-I00">
+                                        <rect key="frame" x="0.0" y="56" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Настройки"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-wL-4H8">
+                                        <rect key="frame" x="0.0" y="112" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Пожаловаться на идиотов"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aiR-yX-pMx" firstAttribute="centerY" secondItem="Z11-pl-A0g" secondAttribute="centerY" id="JoY-Dm-NV6"/>
+                            <constraint firstItem="aiR-yX-pMx" firstAttribute="centerX" secondItem="Z11-pl-A0g" secondAttribute="centerX" id="r5L-7g-Pev"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z11-pl-A0g"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Меню" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="Yvu-Tt-ORH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imo-Dz-jEi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TiB-AE-gpc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LB2-kn-aOA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="A9U-F2-xKv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VJm-gR-VmY" kind="relationship" relationship="rootViewController" id="48D-0a-Sjw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaS-JJ-X1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="1106"/>
+        </scene>
+        <!--Меню-->
+        <scene sceneID="IOI-lG-nyI">
+            <objects>
+                <viewController id="VJm-gR-VmY" customClass="ViewController" customModule="Segues_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZc-Qn-pEa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xkD-cE-5dF">
+                                <rect key="frame" x="29.5" y="421" width="355" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hct-Ed-AQ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Профиль"/>
+                                        <connections>
+                                            <segue destination="E1Z-Le-mdB" kind="presentation" id="bgv-qX-QBq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF7-uc-IxP">
+                                        <rect key="frame" x="0.0" y="56" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Настройки"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lU-5N-ibZ">
+                                        <rect key="frame" x="0.0" y="112" width="355" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Пожаловаться на идиотов"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xkD-cE-5dF" firstAttribute="centerX" secondItem="yjm-21-MGn" secondAttribute="centerX" id="B04-d3-yGa"/>
+                            <constraint firstItem="xkD-cE-5dF" firstAttribute="centerY" secondItem="yjm-21-MGn" secondAttribute="centerY" id="VAo-pM-omO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yjm-21-MGn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Меню" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="JgV-dv-cRE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eF-1G-d4e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="1106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SvO-pl-Nwi">
+            <objects>
+                <viewController id="E1Z-Le-mdB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOQ-sR-6MJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zg9-vv-ILY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBm-aE-kzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="1106"/>
+        </scene>
+    </scenes>
+</document>
