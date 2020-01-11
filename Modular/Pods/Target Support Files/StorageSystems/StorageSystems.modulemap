@@ -1,0 +1,6 @@
+framework module StorageSystems {
+  umbrella header "StorageSystems-umbrella.h"
+
+  export *
+  module * { export * }
+}

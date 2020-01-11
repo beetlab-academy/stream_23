@@ -1,0 +1,25 @@
+{
+  "name": "StorageSystems",
+  "version": "0.1.0",
+  "summary": "A short description of StorageSystems.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/BeetLab/StorageSystems",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "BeetLab": "nikita.a.semenov@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/BeetLab/StorageSystems.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "StorageSystems/Storage/**/*.swift",
+  "resources": [
+    "StorageSystems/Base.lproj/*"
+  ]
+}

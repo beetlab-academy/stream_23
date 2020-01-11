@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Modular/Pods-Modular-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MTBBarcodeScanner/MTBBarcodeScanner.framework
+${BUILT_PRODUCTS_DIR}/StorageSystems/StorageSystems.framework

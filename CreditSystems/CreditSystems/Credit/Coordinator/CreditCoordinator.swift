@@ -44,6 +44,8 @@ class CreditCoordinator {
     var flowCompleted: (() -> Void)?
     
     func start() {
+        
+        [1,2,4].firstIn
         if identityService?.tryRecognizeClient() != nil {
             let startVC = vc("ClientStartController") as! ClientStartController
             startVC.output = self

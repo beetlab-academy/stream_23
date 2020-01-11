@@ -1,0 +1,354 @@
+1. чтобы создать подспек файл - в любом месте на компе ( главное не в папке cashmashine)
+pod lib create Cashmashine
+2. копируете файл Cashmashine.podspec в папку Cashmashine
+3. Оформляете подспек файл по образцу (обратите внимание на s.source_files, s.resources, LocalBundle)
+4. Копируете в папку Modules содержимое Cashmashine
+5. В подфайл пишете по образцу (pod с path)
+
+// для даниила //
+
+Last login: Fri Jan  3 15:20:49 on ttys001
+You have mail.
+Krasas-MacBook-Pro:stream_25 krasa$ cd ../stream_23
+Krasas-MacBook-Pro:stream_23 krasa$ ls
+CollectionView	Drink Up	Segues - 3	someFile.txt
+CreditSystems	Modular		Segues-2
+Krasas-MacBook-Pro:stream_23 krasa$ cd ./Modular
+Krasas-MacBook-Pro:Modular krasa$ ;s
+-bash: syntax error near unexpected token `;'
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modular.xcodeproj
+Krasas-MacBook-Pro:Modular krasa$ pod init
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modular.xcodeproj	Podfile
+Krasas-MacBook-Pro:Modular krasa$ code Podfile
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modular.xcodeproj	Podfile
+Krasas-MacBook-Pro:Modular krasa$ mkdir ./Modules
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules
+Modular.xcodeproj	Podfile
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules
+Modular.xcodeproj	Podfile
+Krasas-MacBook-Pro:Modular krasa$ cd ./Modules
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ cd ./StorageSystems-master/
+Krasas-MacBook-Pro:StorageSystems-master krasa$ ls
+StorageSystems			StorageSystemsTests
+StorageSystems.xcodeproj
+Krasas-MacBook-Pro:StorageSystems-master krasa$ touch StorageSystems.podspec
+Krasas-MacBook-Pro:StorageSystems-master krasa$ ls
+StorageSystems			StorageSystems.xcodeproj
+StorageSystems.podspec		StorageSystemsTests
+Krasas-MacBook-Pro:StorageSystems-master krasa$ pod lib init
+[!] Unknown command: `init`
+Did you mean: lint?
+
+Usage:
+
+    $ pod lib COMMAND
+
+      Develop pods
+
+Commands:
+
+    + create    Creates a new Pod
+    + lint      Validates a Pod
+
+Options:
+
+    --silent    Show nothing
+    --verbose   Show more debugging information
+    --no-ansi   Show output without ANSI codes
+    --help      Show help banner of specified command
+Krasas-MacBook-Pro:StorageSystems-master krasa$ pod lib create
+[!] A name for the Pod is required.
+
+Usage:
+
+    $ pod lib create NAME
+
+      Creates a scaffold for the development of a new Pod named `NAME`
+      according to the CocoaPods best practices. If a `TEMPLATE_URL`, pointing
+      to a git repo containing a compatible template, is specified, it will be
+      used in place of the default one.
+
+Options:
+
+    --template-url=URL   The URL of the git repo containing a compatible
+                         template
+    --silent             Show nothing
+    --verbose            Show more debugging information
+    --no-ansi            Show output without ANSI codes
+    --help               Show help banner of specified command
+Krasas-MacBook-Pro:StorageSystems-master krasa$ pod lib create StorageSystems
+Cloning `https://github.com/CocoaPods/pod-template.git` into `StorageSystems`.
+[!] /usr/local/bin/git clone https://github.com/CocoaPods/pod-template.git StorageSystems
+
+fatal: destination path 'StorageSystems' already exists and is not an empty directory.
+
+Krasas-MacBook-Pro:StorageSystems-master krasa$ ls
+StorageSystems			StorageSystems.xcodeproj
+StorageSystems.podspec		StorageSystemsTests
+Krasas-MacBook-Pro:StorageSystems-master krasa$ cd ..
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ pod lib create StorageSystems
+Cloning `https://github.com/CocoaPods/pod-template.git` into `StorageSystems`.
+Configuring StorageSystems template.
+
+------------------------------
+
+To get you started we need to ask a few questions, this should only take a minute.
+
+2020-01-11 16:39:17.049 defaults[24615:2838619] 
+The domain/default pair of (org.cocoapods.pod-template, HasRunBefore) does not exist
+If this is your first time we recommend running through with the guide: 
+ - https://guides.cocoapods.org/making/using-pod-lib-create.html
+ ( hold cmd and double click links to open in a browser. )
+
+ Press return to continue.
+
+
+What platform do you want to use?? [ iOS / macOS ]
+ > iOS
+
+What language do you want to use?? [ Swift / ObjC ]
+ > Swift
+
+Would you like to include a demo application with your library? [ Yes / No ]
+ > No
+
+Which testing frameworks will you use? [ Quick / None ]
+ > None
+
+Would you like to do view based testing? [ Yes / No ]
+ > No
+
+Running pod install on your new library.
+
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `../`
+Downloading dependencies
+Installing StorageSystems (0.1.0)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `StorageSystems.xcworkspace` for this project from now on.
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `9.3` on target `StorageSystems_Tests` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+ Ace! you're ready to go!
+ We will start you off by opening your project in Xcode
+  open 'StorageSystems/Example/StorageSystems.xcworkspace'
+
+To learn more about the template see `https://github.com/CocoaPods/pod-template.git`.
+To learn more about creating a new pod, see `https://guides.cocoapods.org/making/making-a-cocoapod`.
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems		StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ cd ./StorageSystems
+Krasas-MacBook-Pro:StorageSystems krasa$ ls
+Example			README.md		StorageSystems.podspec
+LICENSE			StorageSystems		_Pods.xcodeproj
+Krasas-MacBook-Pro:StorageSystems krasa$ cp ./StorageSystems.podspec ../StorageSystems-master
+Krasas-MacBook-Pro:StorageSystems krasa$ cd ..
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems		StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ ls StorageSystems-master
+StorageSystems			StorageSystems.xcodeproj
+StorageSystems.podspec		StorageSystemsTests
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems		StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ rm -rf StorageSystems
+Krasas-MacBook-Pro:Modules krasa$ cd ./StorageSystems-master
+Krasas-MacBook-Pro:StorageSystems-master krasa$ ls
+StorageSystems			StorageSystems.xcodeproj
+StorageSystems.podspec		StorageSystemsTests
+Krasas-MacBook-Pro:StorageSystems-master krasa$ code StorageSystems.podspec
+Krasas-MacBook-Pro:StorageSystems-master krasa$ cd ..
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ cd ..
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules
+Modular.xcodeproj	Podfile
+Krasas-MacBook-Pro:Modular krasa$ code Podfile
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules
+Modular.xcodeproj	Podfile
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+Downloading dependencies
+Installing StorageSystems (0.1.0)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `Modular.xcworkspace` for this project from now on.
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules			Pods
+Modular.xcodeproj	Podfile
+Modular.xcworkspace	Podfile.lock
+Krasas-MacBook-Pro:Modular krasa$ open Modular.xcworkspace
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules			Pods
+Modular.xcodeproj	Podfile
+Modular.xcworkspace	Podfile.lock
+Krasas-MacBook-Pro:Modular krasa$ cd ./Modules
+Krasas-MacBook-Pro:Modules krasa$ ls
+StorageSystems-master
+Krasas-MacBook-Pro:Modules krasa$ cd ./StorageSystems-master/
+Krasas-MacBook-Pro:StorageSystems-master krasa$ ls
+StorageSystems			StorageSystems.xcodeproj
+StorageSystems.podspec		StorageSystemsTests
+Krasas-MacBook-Pro:StorageSystems-master krasa$ pod lib lint
+
+ -> StorageSystems
+^C
+[!] Cancelled
+Krasas-MacBook-Pro:StorageSystems-master krasa$ 
+Krasas-MacBook-Pro:StorageSystems-master krasa$ pod lib lint
+
+^C[!] Cancelledems
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:StorageSystems-master krasa$ cd ..
+Krasas-MacBook-Pro:Modules krasa$ cd ..
+Krasas-MacBook-Pro:Modular krasa$ l
+-bash: l: command not found
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules			Pods
+Modular.xcodeproj	Podfile
+Modular.xcworkspace	Podfile.lock
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+[!] The `StorageSystems` pod failed to validate due to 1 error:
+    - ERROR | attributes: Missing required attribute `source`.
+    - WARN  | summary: The summary is not meaningful.
+
+
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+Downloading dependencies
+Installing StorageSystems 0.1.0
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+Downloading dependencies
+Installing StorageSystems 0.1.0
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules			Pods
+Modular.xcodeproj	Podfile
+Modular.xcworkspace	Podfile.lock
+Krasas-MacBook-Pro:Modular krasa$ open Modular.xcworkspace
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+Downloading dependencies
+Installing StorageSystems 0.1.0
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+Downloading dependencies
+Installing StorageSystems 0.1.0
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules			Pods
+Modular.xcodeproj	Podfile
+Modular.xcworkspace	Podfile.lock
+Krasas-MacBook-Pro:Modular krasa$ pod install
+Analyzing dependencies
+Fetching podspec for `StorageSystems` from `./Modules/StorageSystems-master`
+Downloading dependencies
+Installing MTBBarcodeScanner (5.0.11)
+Using StorageSystems (0.1.0)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
+
+[!] Automatically assigning platform `ios` with version `12.2` on target `Modular` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+
+[!] A license was specified in podspec `StorageSystems` but the file does not exist - /Users/krasa/stream_23/Modular/Modules/StorageSystems-master/LICENSE
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+
+[!] Unable to read the license file `LICENSE` for the spec `StorageSystems (0.1.0)`
+Krasas-MacBook-Pro:Modular krasa$ ls
+Modular			Modules			Pods
+Modular.xcodeproj	Podfile
+Modular.xcworkspace	Podfile.lock
+Krasas-MacBook-Pro:Modular krasa$ touch howto
+Krasas-MacBook-Pro:Modular krasa$ code howto
+Krasas-MacBook-Pro:Modular krasa$ 
