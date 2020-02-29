@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2172C0CF240A86D1000A6133 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0CE240A86D1000A6133 /* main.swift */; };
+		2172C0D7240A86F3000A6133 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0D6240A86F3000A6133 /* Storage.swift */; };
+		2172C0D9240A870A000A6133 /* StoragePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0D8240A870A000A6133 /* StoragePost.swift */; };
+		2172C0DB240A87DB000A6133 /* StorageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0DA240A87DB000A6133 /* StorageAssembly.swift */; };
+		2172C0DE240A8CA6000A6133 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0DD240A8CA6000A6133 /* Network.swift */; };
+		2172C0E0240A8E42000A6133 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0DF240A8E42000A6133 /* Post.swift */; };
+		2172C0E2240A9127000A6133 /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0E1240A9127000A6133 /* NetworkAssembly.swift */; };
+		2172C0E7240A95E4000A6133 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0E6240A95E4000A6133 /* PostListModel.swift */; };
+		2172C0E9240A961B000A6133 /* PresentationPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0E8240A961B000A6133 /* PresentationPost.swift */; };
+		2172C0EB240A989F000A6133 /* ModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0EA240A989F000A6133 /* ModelAssembly.swift */; };
+		2172C0EE240A9A67000A6133 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0ED240A9A67000A6133 /* PostsListViewController.swift */; };
+		2172C0F0240A9B51000A6133 /* PostsListViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0EF240A9B51000A6133 /* PostsListViewControllerAssembly.swift */; };
+		2172C0F4240A9C5C000A6133 /* PostDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0F3240A9C5C000A6133 /* PostDetailsModel.swift */; };
+		2172C0F6240A9DB8000A6133 /* PresentationPostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0F5240A9DB8000A6133 /* PresentationPostDetails.swift */; };
+		2172C0F8240AA286000A6133 /* PostDetailsModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0F7240AA286000A6133 /* PostDetailsModelAssembly.swift */; };
+		2172C0FB240AA366000A6133 /* PostDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0FA240AA366000A6133 /* PostDetailsController.swift */; };
+		2172C0FD240AA3E7000A6133 /* PostDetailsControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0FC240AA3E7000A6133 /* PostDetailsControllerAssembly.swift */; };
+		2172C100240AA473000A6133 /* PostListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172C0FF240AA473000A6133 /* PostListRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2172C0C9240A86D1000A6133 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2172C0CB240A86D1000A6133 /* AssemblyExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AssemblyExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		2172C0CE240A86D1000A6133 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2172C0D6240A86F3000A6133 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		2172C0D8240A870A000A6133 /* StoragePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePost.swift; sourceTree = "<group>"; };
+		2172C0DA240A87DB000A6133 /* StorageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAssembly.swift; sourceTree = "<group>"; };
+		2172C0DD240A8CA6000A6133 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2172C0DF240A8E42000A6133 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2172C0E1240A9127000A6133 /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
+		2172C0E6240A95E4000A6133 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
+		2172C0E8240A961B000A6133 /* PresentationPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPost.swift; sourceTree = "<group>"; };
+		2172C0EA240A989F000A6133 /* ModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAssembly.swift; sourceTree = "<group>"; };
+		2172C0ED240A9A67000A6133 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		2172C0EF240A9B51000A6133 /* PostsListViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewControllerAssembly.swift; sourceTree = "<group>"; };
+		2172C0F3240A9C5C000A6133 /* PostDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsModel.swift; sourceTree = "<group>"; };
+		2172C0F5240A9DB8000A6133 /* PresentationPostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPostDetails.swift; sourceTree = "<group>"; };
+		2172C0F7240AA286000A6133 /* PostDetailsModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsModelAssembly.swift; sourceTree = "<group>"; };
+		2172C0FA240AA366000A6133 /* PostDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsController.swift; sourceTree = "<group>"; };
+		2172C0FC240AA3E7000A6133 /* PostDetailsControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsControllerAssembly.swift; sourceTree = "<group>"; };
+		2172C0FF240AA473000A6133 /* PostListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2172C0C8240A86D1000A6133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2172C0C2240A86D1000A6133 = {
+			isa = PBXGroup;
+			children = (
+				2172C0CD240A86D1000A6133 /* AssemblyExample */,
+				2172C0CC240A86D1000A6133 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2172C0CC240A86D1000A6133 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0CB240A86D1000A6133 /* AssemblyExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2172C0CD240A86D1000A6133 /* AssemblyExample */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0F1240A9C42000A6133 /* PostDetailsModule */,
+				2172C0E5240A95B6000A6133 /* PostListModule */,
+				2172C0E4240A94E8000A6133 /* Common */,
+				2172C0CE240A86D1000A6133 /* main.swift */,
+			);
+			path = AssemblyExample;
+			sourceTree = "<group>";
+		};
+		2172C0D5240A86E9000A6133 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0D6240A86F3000A6133 /* Storage.swift */,
+				2172C0D8240A870A000A6133 /* StoragePost.swift */,
+				2172C0DA240A87DB000A6133 /* StorageAssembly.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2172C0DC240A8C96000A6133 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0DD240A8CA6000A6133 /* Network.swift */,
+				2172C0DF240A8E42000A6133 /* Post.swift */,
+				2172C0E1240A9127000A6133 /* NetworkAssembly.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2172C0E3240A91D3000A6133 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0E6240A95E4000A6133 /* PostListModel.swift */,
+				2172C0E8240A961B000A6133 /* PresentationPost.swift */,
+				2172C0EA240A989F000A6133 /* ModelAssembly.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2172C0E4240A94E8000A6133 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0D5240A86E9000A6133 /* Storage */,
+				2172C0DC240A8C96000A6133 /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2172C0E5240A95B6000A6133 /* PostListModule */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0FE240AA46A000A6133 /* Router */,
+				2172C0EC240A9A59000A6133 /* Controller */,
+				2172C0E3240A91D3000A6133 /* Model */,
+			);
+			path = PostListModule;
+			sourceTree = "<group>";
+		};
+		2172C0EC240A9A59000A6133 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0ED240A9A67000A6133 /* PostsListViewController.swift */,
+				2172C0EF240A9B51000A6133 /* PostsListViewControllerAssembly.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2172C0F1240A9C42000A6133 /* PostDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0F9240AA35A000A6133 /* Controller */,
+				2172C0F2240A9C53000A6133 /* Model */,
+			);
+			path = PostDetailsModule;
+			sourceTree = "<group>";
+		};
+		2172C0F2240A9C53000A6133 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0F3240A9C5C000A6133 /* PostDetailsModel.swift */,
+				2172C0F5240A9DB8000A6133 /* PresentationPostDetails.swift */,
+				2172C0F7240AA286000A6133 /* PostDetailsModelAssembly.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2172C0F9240AA35A000A6133 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0FA240AA366000A6133 /* PostDetailsController.swift */,
+				2172C0FC240AA3E7000A6133 /* PostDetailsControllerAssembly.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2172C0FE240AA46A000A6133 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2172C0FF240AA473000A6133 /* PostListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2172C0CA240A86D1000A6133 /* AssemblyExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2172C0D2240A86D1000A6133 /* Build configuration list for PBXNativeTarget "AssemblyExample" */;
+			buildPhases = (
+				2172C0C7240A86D1000A6133 /* Sources */,
+				2172C0C8240A86D1000A6133 /* Frameworks */,
+				2172C0C9240A86D1000A6133 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssemblyExample;
+			productName = AssemblyExample;
+			productReference = 2172C0CB240A86D1000A6133 /* AssemblyExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2172C0C3240A86D1000A6133 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Nikita Semenov";
+				TargetAttributes = {
+					2172C0CA240A86D1000A6133 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 2172C0C6240A86D1000A6133 /* Build configuration list for PBXProject "AssemblyExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2172C0C2240A86D1000A6133;
+			productRefGroup = 2172C0CC240A86D1000A6133 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2172C0CA240A86D1000A6133 /* AssemblyExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2172C0C7240A86D1000A6133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2172C0DE240A8CA6000A6133 /* Network.swift in Sources */,
+				2172C0E7240A95E4000A6133 /* PostListModel.swift in Sources */,
+				2172C0E2240A9127000A6133 /* NetworkAssembly.swift in Sources */,
+				2172C0FB240AA366000A6133 /* PostDetailsController.swift in Sources */,
+				2172C0CF240A86D1000A6133 /* main.swift in Sources */,
+				2172C0F0240A9B51000A6133 /* PostsListViewControllerAssembly.swift in Sources */,
+				2172C0DB240A87DB000A6133 /* StorageAssembly.swift in Sources */,
+				2172C0F4240A9C5C000A6133 /* PostDetailsModel.swift in Sources */,
+				2172C0FD240AA3E7000A6133 /* PostDetailsControllerAssembly.swift in Sources */,
+				2172C0EB240A989F000A6133 /* ModelAssembly.swift in Sources */,
+				2172C0F8240AA286000A6133 /* PostDetailsModelAssembly.swift in Sources */,
+				2172C0E0240A8E42000A6133 /* Post.swift in Sources */,
+				2172C0D9240A870A000A6133 /* StoragePost.swift in Sources */,
+				2172C0F6240A9DB8000A6133 /* PresentationPostDetails.swift in Sources */,
+				2172C0EE240A9A67000A6133 /* PostsListViewController.swift in Sources */,
+				2172C0D7240A86F3000A6133 /* Storage.swift in Sources */,
+				2172C100240AA473000A6133 /* PostListRouter.swift in Sources */,
+				2172C0E9240A961B000A6133 /* PresentationPost.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2172C0D0240A86D1000A6133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2172C0D1240A86D1000A6133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2172C0D3240A86D1000A6133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G22P334F2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2172C0D4240A86D1000A6133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G22P334F2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2172C0C6240A86D1000A6133 /* Build configuration list for PBXProject "AssemblyExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2172C0D0240A86D1000A6133 /* Debug */,
+				2172C0D1240A86D1000A6133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2172C0D2240A86D1000A6133 /* Build configuration list for PBXNativeTarget "AssemblyExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2172C0D3240A86D1000A6133 /* Debug */,
+				2172C0D4240A86D1000A6133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2172C0C3240A86D1000A6133 /* Project object */;
+}
