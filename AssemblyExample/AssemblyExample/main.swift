@@ -17,4 +17,15 @@ print("Hello, World!")
 
 let vcAssembly = PostsListViewControllerAssembly()
 let startVC = vcAssembly.viewController
+
+var x = 5
+
+let d = { [x] in
+    x += 5
+}
+
+d()
+
+print(x)
+
 // window?.rootViewController = startVC
